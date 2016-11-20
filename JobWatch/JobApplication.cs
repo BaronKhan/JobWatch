@@ -8,29 +8,21 @@ namespace JobWatch
 {
   public class JobApplication
   {
-    public int m_id { get; set; }
     public string m_company { get; set; }
     public string m_jobRole { get; set; }
-
-    public static int s_applicationCount { get; private set; }
-
-    static JobApplication() { s_applicationCount = 0; }
+    public string m_status { get; set; }
     
     public JobApplication() {
-      m_id = s_applicationCount;
       m_company = "Company not set";
       m_jobRole = "Job role not set";
-
-      s_applicationCount++;
+      m_status = "N/A";
     }
 
-    public JobApplication(string company, string jobRole)
+    public JobApplication(string company, string jobRole, string status)
     {
-      m_id = s_applicationCount;
       m_company = company;
       m_jobRole = jobRole;
-
-      s_applicationCount++;
+      m_status = status;
     }
   }
 }

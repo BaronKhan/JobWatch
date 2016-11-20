@@ -2,11 +2,13 @@
     {
         "id": 0,
         "m_company": "Big Inc",
-        "m_jobRole": "CEO"
+        "m_jobRole": "CEO",
+        "m_status":  "Rejected"
     },
     {
         "id": 1,
         "m_company": "Small Inc",
-        "m_jobRole": "CFO"
+        "m_jobRole": "CFO",
+        "m_status":  "Rejected"
     }
 ]

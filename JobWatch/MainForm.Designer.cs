@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
+      System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Rejected", System.Windows.Forms.HorizontalAlignment.Left);
       this.listViewApplications = new System.Windows.Forms.ListView();
       this.columnHeaderCompany = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
       this.columnHeaderJobRole = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -38,6 +39,10 @@
       this.listViewApplications.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderCompany,
             this.columnHeaderJobRole});
+      listViewGroup1.Header = "Rejected";
+      listViewGroup1.Name = "listViewGroupRejected";
+      this.listViewApplications.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1});
       this.listViewApplications.Location = new System.Drawing.Point(13, 144);
       this.listViewApplications.Name = "listViewApplications";
       this.listViewApplications.Size = new System.Drawing.Size(345, 358);

@@ -37,9 +37,12 @@ namespace JobWatch
     public void UpdateJobsListView()
     {
       listViewApplications.Items.Clear();
-      foreach(var job in m_jobsList) {
+      foreach (var job in m_jobsList)
+      {
         var item = new ListViewItem(new[] { job.m_company, job.m_jobRole });
         listViewApplications.Items.Add(item);
+        int currentIndex = listViewApplications.Items.Count-1;
+        listViewApplications.Items[currentIndex].Group = listViewApplications.Groups["listViewGroup"+job.m_status];
       }
     }
   }
