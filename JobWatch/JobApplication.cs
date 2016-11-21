@@ -15,7 +15,7 @@ namespace JobWatch
     public JobApplication() {
       m_company = "Company not set";
       m_jobRole = "Job role not set";
-      m_status = "N/A";
+      m_status = "Pending";
     }
 
     public JobApplication(string company, string jobRole, string status)
