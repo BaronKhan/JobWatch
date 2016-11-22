@@ -58,6 +58,7 @@ namespace JobWatch
         lastJobIndex = listViewApplications.SelectedItems[0].Index;
         textBoxCompany.Text = m_jobsList[lastJobIndex].m_company;
         textBoxJobRole.Text = m_jobsList[lastJobIndex].m_jobRole;
+        comboBoxStatus.SelectedItem = getStatus(lastJobIndex);
       }
     }
 
@@ -77,6 +78,7 @@ namespace JobWatch
       var newJob = new JobApplication();
       m_jobsList.Add(newJob);
       UpdateJobsListView();
+      clearJobInformation();
     }
 
     private void buttonDelete_Click(object sender, EventArgs e)
@@ -86,6 +88,48 @@ namespace JobWatch
         m_jobsList.RemoveAt(lastJobIndex);
       }
       UpdateJobsListView();
+      clearJobInformation();
+    }
+
+    private void buttonUpdate_Click(object sender, EventArgs e)
+    {
+      if (listViewApplications.SelectedItems.Count > 0)
+      {
+        m_jobsList[lastJobIndex].m_company = textBoxCompany.Text;
+        m_jobsList[lastJobIndex].m_jobRole = textBoxJobRole.Text;
+        setStatus(lastJobIndex, comboBoxStatus.Text);
+      }
+      UpdateJobsListView();
+    }
+
+    private void setStatus(int jobIndex, string status)
+    {
+      if (status == "In-Progress")
+      {
+        m_jobsList[jobIndex].m_status = "InProgress";
+      }
+      else
+      {
+        m_jobsList[jobIndex].m_status = status;
+      }
+    }
+
+    private string getStatus(int jobIndex)
+    {
+      if (m_jobsList[jobIndex].m_status == "InProgress")
+      {
+        return "In-Progress";
+      }
+      else
+      {
+        return m_jobsList[jobIndex].m_status;
+      }
+    }
+
+    private void clearJobInformation()
+    {
+      textBoxCompany.Clear();
+      textBoxJobRole.Clear();
     }
   }
 }

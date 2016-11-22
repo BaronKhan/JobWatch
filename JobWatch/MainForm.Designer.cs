@@ -28,14 +28,14 @@
     /// </summary>
     private void InitializeComponent()
     {
-      System.Windows.Forms.ListViewGroup listViewGroup9 = new System.Windows.Forms.ListViewGroup("Accepted", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup10 = new System.Windows.Forms.ListViewGroup("Rejected", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup11 = new System.Windows.Forms.ListViewGroup("Waiting for Reply", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup12 = new System.Windows.Forms.ListViewGroup("Interview with", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup13 = new System.Windows.Forms.ListViewGroup("Application in Progress", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup14 = new System.Windows.Forms.ListViewGroup("Application Pending", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup15 = new System.Windows.Forms.ListViewGroup("Interested In", System.Windows.Forms.HorizontalAlignment.Left);
-      System.Windows.Forms.ListViewGroup listViewGroup16 = new System.Windows.Forms.ListViewGroup("Applied To", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("Accepted", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("Rejected", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("Waiting for Reply", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup4 = new System.Windows.Forms.ListViewGroup("Interview with", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup5 = new System.Windows.Forms.ListViewGroup("Application in Progress", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup6 = new System.Windows.Forms.ListViewGroup("Application Pending", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup7 = new System.Windows.Forms.ListViewGroup("Interested In", System.Windows.Forms.HorizontalAlignment.Left);
+      System.Windows.Forms.ListViewGroup listViewGroup8 = new System.Windows.Forms.ListViewGroup("Applied To", System.Windows.Forms.HorizontalAlignment.Left);
       this.listViewApplications = new System.Windows.Forms.ListView();
       this.columnHeaderCompany = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
       this.columnHeaderJobRole = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -61,31 +61,31 @@
             this.columnHeaderJobRole,
             this.columnHeaderNextDeadline});
       this.listViewApplications.FullRowSelect = true;
-      listViewGroup9.Header = "Accepted";
-      listViewGroup9.Name = "listViewGroupAccepted";
-      listViewGroup10.Header = "Rejected";
-      listViewGroup10.Name = "listViewGroupRejected";
-      listViewGroup11.Header = "Waiting for Reply";
-      listViewGroup11.Name = "listViewGroupWaiting";
-      listViewGroup12.Header = "Interview with";
-      listViewGroup12.Name = "listViewGroupInterview";
-      listViewGroup13.Header = "Application in Progress";
-      listViewGroup13.Name = "listViewGroupInProgress";
-      listViewGroup14.Header = "Application Pending";
-      listViewGroup14.Name = "listViewGroupPending";
-      listViewGroup15.Header = "Interested In";
-      listViewGroup15.Name = "listViewGroupInterested";
-      listViewGroup16.Header = "Applied To";
-      listViewGroup16.Name = "listViewGroupApplied";
+      listViewGroup1.Header = "Accepted";
+      listViewGroup1.Name = "listViewGroupAccepted";
+      listViewGroup2.Header = "Rejected";
+      listViewGroup2.Name = "listViewGroupRejected";
+      listViewGroup3.Header = "Waiting for Reply";
+      listViewGroup3.Name = "listViewGroupWaiting";
+      listViewGroup4.Header = "Interview with";
+      listViewGroup4.Name = "listViewGroupInterview";
+      listViewGroup5.Header = "Application in Progress";
+      listViewGroup5.Name = "listViewGroupInProgress";
+      listViewGroup6.Header = "Application Pending";
+      listViewGroup6.Name = "listViewGroupPending";
+      listViewGroup7.Header = "Interested In";
+      listViewGroup7.Name = "listViewGroupInterested";
+      listViewGroup8.Header = "Applied To";
+      listViewGroup8.Name = "listViewGroupApplied";
       this.listViewApplications.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup9,
-            listViewGroup10,
-            listViewGroup11,
-            listViewGroup12,
-            listViewGroup13,
-            listViewGroup14,
-            listViewGroup15,
-            listViewGroup16});
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3,
+            listViewGroup4,
+            listViewGroup5,
+            listViewGroup6,
+            listViewGroup7,
+            listViewGroup8});
       this.listViewApplications.Location = new System.Drawing.Point(13, 12);
       this.listViewApplications.MultiSelect = false;
       this.listViewApplications.Name = "listViewApplications";
@@ -222,6 +222,7 @@
       this.buttonUpdate.TabIndex = 5;
       this.buttonUpdate.Text = "Update";
       this.buttonUpdate.UseVisualStyleBackColor = true;
+      this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
       // 
       // MainForm
       // 
