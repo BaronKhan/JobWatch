@@ -58,7 +58,7 @@ namespace JobWatch
         lastJobIndex = listViewApplications.SelectedItems[0].Index;
         textBoxCompany.Text = m_jobsList[lastJobIndex].m_company;
         textBoxJobRole.Text = m_jobsList[lastJobIndex].m_jobRole;
-        comboBoxStatus.SelectedItem = getStatus(lastJobIndex);
+        comboBoxStatus.Text = getStatus(lastJobIndex);
       }
     }
 
@@ -100,6 +100,7 @@ namespace JobWatch
         setStatus(lastJobIndex, comboBoxStatus.Text);
       }
       UpdateJobsListView();
+      clearJobInformation();
     }
 
     private void setStatus(int jobIndex, string status)
@@ -130,6 +131,7 @@ namespace JobWatch
     {
       textBoxCompany.Clear();
       textBoxJobRole.Clear();
+      comboBoxStatus.Text = "";
     }
   }
 }
