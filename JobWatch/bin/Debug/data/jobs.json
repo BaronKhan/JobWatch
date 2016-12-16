@@ -3,7 +3,8 @@
         "id": 0,
         "m_company": "Big Inc",
         "m_jobRole": "CEO",
-        "m_status":  "Rejected"
+        "m_status": "Rejected",
+        "m_text":  "This is an example job"
     },
     {
         "id": 1,

@@ -1,0 +1,9 @@
+D:\Google Drive\Other\JobWatch\JobWatch\bin\Release\JobWatch.exe.config
+D:\Google Drive\Other\JobWatch\JobWatch\bin\Release\data\jobs.json
+D:\Google Drive\Other\JobWatch\JobWatch\bin\Release\JobWatch.exe
+D:\Google Drive\Other\JobWatch\JobWatch\bin\Release\JobWatch.pdb
+D:\Google Drive\Other\JobWatch\JobWatch\obj\Release\JobWatch.MainForm.resources
+D:\Google Drive\Other\JobWatch\JobWatch\obj\Release\JobWatch.Properties.Resources.resources
+D:\Google Drive\Other\JobWatch\JobWatch\obj\Release\JobWatch.csproj.GenerateResource.Cache
+D:\Google Drive\Other\JobWatch\JobWatch\obj\Release\JobWatch.exe
+D:\Google Drive\Other\JobWatch\JobWatch\obj\Release\JobWatch.pdb
