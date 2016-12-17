@@ -211,9 +211,9 @@ namespace JobWatch
       {
 #if DEBUG
         // debug stuff goes here
-        openFileDialogLoad.InitialDirectory = Path.Combine(Path.GetDirectoryName(Directory.GetCurrentDirectory()), @"Debug\data");
+        openFileDialogLoad.InitialDirectory = Path.Combine(Path.GetDirectoryName(Directory.GetCurrentDirectory()), @"\Debug\data");
 #else
-        openFileDialogLoad.InitialDirectory = Path.Combine(Path.GetDirectoryName(Directory.GetCurrentDirectory()), @"Release\data");
+        openFileDialogLoad.InitialDirectory = Path.Combine(Path.GetDirectoryName(Directory.GetCurrentDirectory()), @"\Release\data");
 #endif
         DialogResult result = openFileDialogLoad.ShowDialog();
         if (result == DialogResult.OK)
