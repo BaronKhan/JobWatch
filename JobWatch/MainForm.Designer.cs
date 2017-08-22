@@ -312,6 +312,8 @@
       this.groupBoxJobInfo.PerformLayout();
       this.ResumeLayout(false);
 
+      this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(MainForm_FormClosing);
+
     }
 
     #endregion

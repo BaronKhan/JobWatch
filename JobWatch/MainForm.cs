@@ -252,5 +252,27 @@ namespace JobWatch
         SaveJobsData(openFileDialogSave.FileName);
       }
     }
+
+    private void MainForm_FormClosing(object sender, FormClosingEventArgs e) {
+      DialogResult dr = MessageBox.Show("Would you like to save these changes?",
+                      "Save changes", MessageBoxButtons.YesNoCancel);
+      switch (dr)
+      {
+        case DialogResult.Yes:
+          openFileDialogSave.FileName = fileName;
+          DialogResult result = openFileDialogSave.ShowDialog();
+          if (result == DialogResult.OK)
+          {
+            SaveJobsData(openFileDialogSave.FileName);
+          }
+          break;
+        case DialogResult.No:
+          break;
+        case DialogResult.Cancel:
+        default:
+          e.Cancel = true;
+          break;
+      }
+    }
   }
 }

@@ -8,3 +8,13 @@ D:\Google Drive\Other\JobWatch\JobWatch\obj\Debug\JobWatch.csproj.GenerateResour
 D:\Google Drive\Other\JobWatch\JobWatch\obj\Debug\JobWatch.exe
 D:\Google Drive\Other\JobWatch\JobWatch\obj\Debug\JobWatch.pdb
 D:\Google Drive\Other\JobWatch\JobWatch\bin\Debug\data\jobs.json
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\bin\Debug\JobWatch.exe.config
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.exe
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.pdb
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\bin\Debug\data\jobs.json
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\bin\Debug\JobWatch.exe
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\bin\Debug\JobWatch.pdb
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.csprojResolveAssemblyReference.cache
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.MainForm.resources
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.Properties.Resources.resources
+D:\Google Drive\GraduateJob\JobWatch\JobWatch\obj\Debug\JobWatch.csproj.GenerateResource.Cache
